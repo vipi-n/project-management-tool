@@ -17,8 +17,5 @@ public interface EmployeeRepository extends CrudRepository<Employee, Long> {
 			" from employee e left join project_employee pe on pe.employee_id=e.employee_id" +
 			" group by e.first_name, e.last_name order by 3 desc")
 	public List<EmployeeProject> employeeProjects();
-	
 
-       // here is the psudo code to check guthub 
-       public void name(){}
    }
